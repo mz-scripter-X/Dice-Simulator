@@ -7,7 +7,7 @@ def roll_dice():
     update_dice_image(num)
 
 def update_dice_image(num):
-    image_path = f"images/dice{num}.png"
+    image_path = f"dice{num}.png"
     dice_image = tk.PhotoImage(file=image_path)
     dice_label.config(image=dice_image)
     dice_label.image = dice_image  # Keep a reference to avoid garbage collection
